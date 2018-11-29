@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chromecast Webpage Viewer - Receiver</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="wrapper js-wrapper">
+    <div class="content">
+        <div class="logo"></div>
+        <h1>Chromecast Webpage Viewer (sender)</h1>
+        <p>Cast webpages to a Chromecast</p>
+
+        <div class="instructions">
+        <p>
+            <b class="not-found-text">Can't find any Chromecast devices to cast to!</b>
+            <br>
+            Ensure that everything is setup correctly.
+            <br>
+            Searching for receivers...
+        </p>
+    </div>
+        <div class="casting">
+        <form id="toCast">
+            <div class="form-group">
+                <label for="urlToCast">Url to cast:</label>
+                <input type="text" class="form-control" id="urlToCast" name="urlToCast" value="https://mixis.lv">
+
+            </div>
+
+            <p>"<span class="js-currently-chromecast">...</span>" currently casting: <span class="js-currently-casting">...</span></p>
+
+            <button class="btn btn-primary btn-cc-cast" type="button" value="cast">Cast It</button>
+            <button class="btn btn-warning btn-cc-disconnect" type="button" value="disconnect">Disconnect</button>
+            <button class="btn btn-danger btn-cc-stop" type="button" value="stop">Stop</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="//www.gstatic.com/cv/js/sender/v1/cast_sender.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

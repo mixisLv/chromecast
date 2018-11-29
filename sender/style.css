@@ -1,0 +1,44 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #404751;
+    color: #fff;
+}
+
+.logo {
+    display: inline-block;
+    width: 146px;
+    height: 120px;
+    background: url(chromecast-logo.svg);
+    background-size: 146px 120px;
+    margin-bottom: 40px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.not-found-text {
+    color: #f35958;
+}
+
+.wrapper .casting {
+    display: none;
+}
+
+.wrapper.receiver-found .casting {
+    display: block;
+}
+
+.wrapper.receiver-not-found .instructions {
+    display: block;
+}
+
+.wrapper .instructions,
+.wrapper.receiver-found .instructions
+{
+    display: none;
+}
+

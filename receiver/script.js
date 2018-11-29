@@ -1,4 +1,4 @@
-var namespace = "urn:x-cast:com.desktime.cast.monitor",
+var namespace = "urn:x-cast:lv.mixis.cast.monitor",
     loggerLevel = cast.receiver.LoggerLevel.ERROR,
     currentUrl = null,
     castReceiverManager = null,
