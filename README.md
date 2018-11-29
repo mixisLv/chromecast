@@ -1,2 +1,2 @@
-# chromecast
-Chromecast sender/receiver
+# Chromecast
+Chromecast Webpage Viewer (sender/receiver)

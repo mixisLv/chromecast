@@ -1,0 +1,47 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #404751;
+  color: #fff;
+}
+
+.logo {
+  display: inline-block;
+  width: 146px;
+  height: 120px;
+  background: url(chromecast-logo.svg);
+  background-size: 146px 120px;
+  margin-bottom: 40px;
+}
+
+.content {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.wrapper .iframe {
+  display: none;
+}
+
+.wrapper.casting .iframe {
+  display: block;
+}
+
+.wrapper.casting .details {
+  display: none;
+}
+
+.large {
+  font-size: 42px;
+}
